@@ -1,0 +1,61 @@
+.main {
+  height: 100vh;
+  background: radial-gradient(50% 50% at 50% 50%, #00222B 0%, #001D25 47.4%, #000A0C 100%);
+}
+
+.plants {
+  width: 100%;
+  height: 30vh;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+}
+
+.content {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 55%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.content h1 {
+  font-weight: 100;
+  text-align: center;
+  font-size: 3em;
+  line-height: 50px;
+}
+
+.content h1 span {
+  font-weight: 900;
+  font-size: 1.5em;
+  color: transparent;
+  -webkit-text-stroke: .000008px #fff;
+  text-stroke: .000008px #fff;
+}
+
+.content h2 {
+  text-align: center;
+  color: #00B881;
+}
+
+.content input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 60%;
+  margin: 20px 5px;
+  font-size: 16px;
+}
+
+.content button[type="submit"] {
+  background: linear-gradient(120.29deg, #005B56 0%, #014339 100%);  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
