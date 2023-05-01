@@ -8,14 +8,23 @@
     padding: 1em 8em;
 }
 
-.navbar ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.btns button:not(:hover) {
+    background: linear-gradient(120.29deg, #005B56 0%, #014339 100%);  color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .5s ease;
 }
 
-.navbar ul li {
-    margin-right: 20%;
+.btns button:hover {
+    box-shadow: 0px 0px 10px 5px #005B56;
+    transition: all .5s ease;
+    background: linear-gradient(120.29deg, #005B56 0%, #014339 100%);  color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
     cursor: pointer;
 }

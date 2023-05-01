@@ -1,10 +1,8 @@
+import Model from "./components/Model";
 import Head from "next/head";
 import Navbar from "./components/Navbar";
-import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 import Image from "next/image";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -17,15 +15,26 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <Navbar></Navbar>
+        <Model></Model>
         <div className={styles.content}>
-          <h1>SENSORY<span>MEET</span></h1>
+          <h1>
+            SENSORY<span>MEET</span>
+          </h1>
           <h2>NEXT GEN VIDEO CHAT APP</h2>
           <p>
-          SensoryMeet is an inclusive online chat platform that ensures disabled persons can connect seamlessly, just like everyone else. With no language barriers to hinder communication, our platform is accessible to all. Experience advanced features like Google Lens, remote PC controls and more, only on SensoryMeet.          </p>
+            SensoryMeet is an inclusive online chat platform that ensures
+            disabled persons can connect seamlessly, just like everyone else.
+            With no language barriers to hinder communication, our platform is
+            accessible to all. Experience advanced features like Google Lens,
+            remote PC controls and more, only on SensoryMeet.{" "}
+          </p>
           <form>
-      <input type="text" placeholder="Enter A Code or Link" />
-      <button type="submit">New Meeting</button>
-    </form>
+            <input
+              type="text"
+              placeholder="Share Features You Want To Add..."
+            />
+            <button type="submit">Share Idea</button>
+          </form>
         </div>
         <Image
           className={styles.plants}
