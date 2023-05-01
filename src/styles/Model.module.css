@@ -1,34 +1,89 @@
 .model {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(0);
-    background-color: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    border-radius: 10px;
-    padding: 20px;
-    width: 60vw;
-    aspect-ratio: 16/9;
-    z-index: 99;
-    transition: transform 500ms;
-  }
-  
-  .model.show {
-    transform: translate(-50%, -50%) scale(1);
-  }
-  
-  .model::before {
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: -10px;
-    right: -10px;
-    bottom: -10px;
-    background: inherit;
-    z-index: -1;
-    filter: blur(10px);
-  }
-  
-  .content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 20px;
+  width: 70vw;
+  aspect-ratio: 20/9;
+  z-index: 99;
+  transition: transform 500ms;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.model h1 {
+    line-height: 30px;
+    font-size: 30px;
+}
+
+.model.show {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.model::before {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  right: -10px;
+  bottom: -10px;
+  background: inherit;
+  z-index: -1;
+  filter: blur(10px);
+}
+
+.model {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.model div {
+    width: 50%;
+    height: fit-content;
     text-align: center;
-  }
+}
+
+.or {
+    margin: 2%;
+}
+
+.model input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  display: block;
+  margin: 10px 5px;
+  font-size: 16px;
+}
+
+.model div:nth-child(1) {
+    width: 40%;
+}
+
+
+.model button[type="submit"] {
+  background: linear-gradient(120.29deg, #005b56 0%, #014339 100%);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 0px 5px;
+  width: 100%;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.bg {
+    height: 100% !important;
+}
+
+.bg img {
+    height: 100%;
+    width: 80%;
+    object-fit: contain;
+}
